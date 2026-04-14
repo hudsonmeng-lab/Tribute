@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thank You, Mr. Bill | Legacy & Tributes</title>
-  <meta name="description" content="A tribute site for Mr. Bill with messages from students, staff, and community members." />
+  <title>Thank You, Mr. Bill | Four Core Values Tributes</title>
+  <meta name="description" content="Celebrate Mr. Bill through Purpose, Determination, Integrity, and Respect. Like/dislike tributes — each value has its own featured tribute." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
@@ -28,7 +28,6 @@
       --radius-md: 16px;
       --max-width: 1200px;
     }
-
     html { scroll-behavior: smooth; }
     body {
       font-family: "Inter", sans-serif;
@@ -38,8 +37,6 @@
       overflow-x: hidden;
     }
     img { display: block; max-width: 100%; }
-
-    /* Background animations */
     .bg-effects {
       position: fixed;
       inset: 0;
@@ -71,8 +68,6 @@
       from { transform: translateX(-30vw) rotate(-12deg); }
       to { transform: translateX(120vw) rotate(-12deg); }
     }
-
-    /* header */
     header {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -102,11 +97,7 @@
       width: 50px;
       height: 50px;
       border-radius: 14px;
-      overflow: hidden;
       background: var(--ice);
-      box-shadow: inset 0 0 0 2px rgba(11,46,111,0.08);
-      flex: 0 0 auto;
-      background-color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -118,7 +109,6 @@
       font-size: 1rem;
       font-weight: 800;
       color: var(--navy);
-      letter-spacing: .4px;
       white-space: nowrap;
     }
     .brand-text .sub {
@@ -132,7 +122,6 @@
       display: flex;
       gap: .4rem;
       flex-wrap: wrap;
-      justify-content: center;
     }
     nav a {
       text-decoration: none;
@@ -147,15 +136,12 @@
       color: var(--navy);
       background: rgba(11,46,111,0.06);
     }
-
-    /* Hero */
     .hero {
       position: relative;
       min-height: 100vh;
       padding: 7rem 1.2rem 4rem;
       display: grid;
       place-items: center;
-      overflow: hidden;
       background: radial-gradient(circle at 20% 20%, rgba(158,189,229,0.35), transparent 22%),
                   radial-gradient(circle at 80% 70%, rgba(214,176,95,0.18), transparent 18%),
                   linear-gradient(145deg, var(--navy) 0%, var(--navy-2) 45%, #234f99 100%);
@@ -182,8 +168,6 @@
       font-size: .82rem;
       font-weight: 800;
       margin-bottom: 1.15rem;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
     }
     .hero h1 {
       font-family: "Playfair Display", serif;
@@ -195,7 +179,6 @@
     .hero h1 .accent {
       display: block;
       color: var(--gold-soft);
-      text-shadow: 0 6px 26px rgba(0,0,0,0.18);
     }
     .hero-subtitle {
       max-width: 700px;
@@ -263,7 +246,6 @@
       border-radius: var(--radius-xl);
       box-shadow: var(--shadow-med);
       overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.35);
     }
     .hero-card-top {
       background: linear-gradient(135deg, var(--ice), #ffffff);
@@ -275,15 +257,13 @@
     .hero-card-logo {
       width: 82px;
       height: 82px;
-      border-radius: 18px;
       background: white;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 48px;
       color: var(--navy);
-      box-shadow: inset 0 0 0 2px rgba(11,46,111,0.08);
-      flex: 0 0 auto;
+      border-radius: 18px;
     }
     .hero-card-title {
       font-family: "Cinzel", serif;
@@ -294,7 +274,6 @@
     .hero-card-sub {
       color: var(--muted);
       font-size: .88rem;
-      margin-top: .2rem;
     }
     .hero-card-body { padding: 0 1.4rem 1.4rem; }
     .hero-card-quote {
@@ -302,18 +281,7 @@
       border: 1px solid rgba(11,46,111,0.08);
       border-radius: 18px;
       padding: 1.1rem 1rem;
-      color: var(--text);
       margin-bottom: 1rem;
-    }
-    .hero-card-quote strong {
-      display: block;
-      color: var(--navy);
-      margin-bottom: .35rem;
-    }
-    .hero-card-tags {
-      display: flex;
-      gap: .5rem;
-      flex-wrap: wrap;
     }
     .tag {
       padding: .45rem .8rem;
@@ -322,11 +290,7 @@
       color: var(--navy);
       font-size: .78rem;
       font-weight: 800;
-      border: 1px solid rgba(11,46,111,0.08);
     }
-
-    /* Section common */
-    section { position: relative; z-index: 1; }
     .section-header {
       max-width: 860px;
       margin: 0 auto;
@@ -347,12 +311,6 @@
       margin-bottom: .8rem;
       color: var(--navy);
     }
-    .section-desc {
-      color: var(--muted);
-      font-size: 1.02rem;
-    }
-
-    /* Biography */
     .bio-container {
       max-width: 900px;
       margin: 0 auto;
@@ -360,11 +318,7 @@
       color: #2c3e4e;
       font-size: 1.05rem;
     }
-    .bio-container p {
-      margin-bottom: 1.3rem;
-    }
-
-    /* Messages grid */
+    .bio-container p { margin-bottom: 1.3rem; }
     .messages-section {
       background: linear-gradient(180deg, #ffffff 0%, #f6faff 100%);
       padding-bottom: 5rem;
@@ -398,13 +352,102 @@
       color: white;
       border-color: var(--navy);
     }
+    .pillar-overview-section {
+      background: white;
+      border-radius: var(--radius-xl);
+      margin: 2rem auto;
+      max-width: 900px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      border: 1px solid rgba(11,46,111,0.08);
+    }
+    .pillar-overview-header {
+      background: linear-gradient(135deg, var(--navy), var(--navy-2));
+      padding: 1.2rem 1.5rem;
+      color: white;
+      font-family: "Cinzel", serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    .pillar-overview-content {
+      padding: 1.8rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .pillar-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 2rem auto 1rem;
+      max-width: 800px;
+    }
+    .pillar-btn {
+      background: white;
+      border: 2px solid var(--navy);
+      color: var(--navy);
+      padding: 0.7rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: "Cinzel", serif;
+    }
+    .pillar-btn.active {
+      background: var(--navy);
+      color: white;
+    }
+    .featured-values-grid {
+      max-width: var(--max-width);
+      margin: 1rem auto 2rem;
+      padding: 0 1.2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .featured-value-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 1.2rem;
+      border-top: 5px solid var(--gold);
+      box-shadow: var(--shadow-soft);
+      transition: 0.2s;
+    }
+    .value-name {
+      font-family: "Cinzel", serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .value-quote {
+      font-style: italic;
+      font-weight: 500;
+      margin: 0.5rem 0;
+      color: var(--text);
+    }
+    .value-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+    }
+    .value-stats {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
     .messages-grid {
       max-width: var(--max-width);
       margin: 0 auto;
       padding: 0 1.2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-      gap: 1.35rem;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.5rem;
     }
     .message-card {
       background: white;
@@ -415,13 +458,10 @@
       opacity: 0;
       transform: translateY(22px);
       transition: .35s ease;
-      position: relative;
+      display: flex;
+      flex-direction: column;
     }
     .message-card.visible { opacity: 1; transform: translateY(0); }
-    .message-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-med);
-    }
     .message-card::before {
       content: "";
       position: absolute;
@@ -435,8 +475,9 @@
       justify-content: space-between;
       gap: .75rem;
       margin-bottom: .8rem;
+      flex-wrap: wrap;
     }
-    .audience-pill {
+    .category-pill {
       display: inline-flex;
       align-items: center;
       gap: .35rem;
@@ -446,12 +487,10 @@
       color: var(--navy);
       font-size: .74rem;
       font-weight: 800;
-      text-transform: uppercase;
     }
-    .grade-pill {
-      color: var(--muted);
-      font-size: .78rem;
-      font-weight: 700;
+    .audience-pill {
+      background: #e9eef5;
+      color: var(--navy-2);
     }
     .quote-icon { color: var(--gold); opacity: .42; font-size: 1.6rem; margin-bottom: .3rem; }
     .message-title { font-weight: 800; color: var(--navy); margin-bottom: .45rem; }
@@ -464,12 +503,16 @@
       background: #eff5ff;
     }
     .media-box img, .media-box video { width: 100%; max-height: 280px; object-fit: cover; }
+    .message-footer {
+      margin-top: auto;
+      border-top: 1px solid rgba(11,46,111,0.08);
+      padding-top: .9rem;
+    }
     .message-author {
       display: flex;
       align-items: center;
       gap: .75rem;
-      border-top: 1px solid rgba(11,46,111,0.08);
-      padding-top: .9rem;
+      margin-bottom: 0.75rem;
     }
     .avatar {
       width: 44px;
@@ -480,40 +523,32 @@
       background: linear-gradient(135deg, var(--navy), var(--navy-2));
       color: white;
       font-weight: 800;
-      flex: 0 0 auto;
     }
     .author-name { font-weight: 800; color: var(--navy); }
     .author-sub { color: var(--muted); font-size: .82rem; }
-    .empty { grid-column: 1/-1; text-align: center; background: white; border-radius: var(--radius-lg); padding: 2rem; color: var(--muted); }
-
-    /* Featured */
-    .featured-wrap {
-      background: linear-gradient(145deg, #fafcff, #ffffff);
-      border-radius: var(--radius-lg);
-      padding: 1.8rem;
-      margin: 1rem auto 2rem;
-      max-width: 700px;
-      text-align: center;
-      border: 1px solid rgba(11,46,111,0.08);
-      box-shadow: var(--shadow-soft);
+    .vote-buttons {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: flex-end;
     }
-
-    /* Feature band */
-    .feature-band {
-      background: linear-gradient(135deg, var(--navy), var(--navy-2));
-      color: white;
-      padding: 4rem 1.2rem;
+    .vote-btn {
+      background: none;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0.3rem 0.6rem;
+      border-radius: 40px;
+      transition: all 0.2s;
     }
-    .feature-band-inner { max-width: 1000px; margin: 0 auto; text-align: center; }
-    .feature-quote {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(1.5rem, 3vw, 2.2rem);
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-    .feature-credit { color: rgba(255,255,255,0.72); font-weight: 700; }
-
-    /* Timeline */
+    .vote-btn.active-like { color: #2c7a47; background: #e6f4ea; }
+    .vote-btn.active-dislike { color: #b33; background: #ffe6e6; }
+    .vote-count { font-weight: 700; margin-left: 0.15rem; }
     .timeline-section {
       padding: 0 1.2rem 5rem;
       background: linear-gradient(180deg, #f6faff 0%, #ffffff 100%);
@@ -522,7 +557,6 @@
       max-width: 920px;
       margin: 0 auto;
       position: relative;
-      padding-top: .5rem;
     }
     .timeline::before {
       content: "";
@@ -552,8 +586,7 @@
       border-radius: var(--radius-lg);
       padding: 1.25rem;
     }
-    .timeline-year { font-family: "Cinzel", serif; color: var(--navy); font-weight: 800; margin-bottom: .35rem; }
-    .timeline-text { color: var(--muted); }
+    .timeline-year { font-family: "Cinzel", serif; color: var(--navy); font-weight: 800; }
     .timeline-dot {
       position: absolute;
       left: 50%;
@@ -569,10 +602,8 @@
       .timeline::before { left: 16px; transform: none; }
       .timeline-item, .timeline-item:nth-child(odd), .timeline-item:nth-child(even) { justify-content: flex-start; padding-left: 2.6rem; }
       .timeline-card { width: 100%; }
-      .timeline-dot { left: 16px; transform: translateX(-50%); }
+      .timeline-dot { left: 16px; }
     }
-
-    /* Share form */
     .share-section {
       background: linear-gradient(180deg, #ffffff 0%, #edf4ff 100%);
       padding: 0 1.2rem 5rem;
@@ -582,7 +613,6 @@
       margin: 0 auto;
       background: white;
       border-radius: var(--radius-xl);
-      border: 1px solid rgba(11,46,111,0.08);
       box-shadow: var(--shadow-med);
       overflow: hidden;
     }
@@ -594,175 +624,320 @@
     .form-body { padding: 1.4rem; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     .form-group { margin-bottom: 1rem; }
-    .form-group label { display: block; margin-bottom: .4rem; font-weight: 800; color: var(--navy); font-size: .9rem; }
+    .form-group label { display: block; margin-bottom: .4rem; font-weight: 800; color: var(--navy); }
     .form-group input, .form-group select, .form-group textarea {
       width: 100%; padding: .9rem 1rem; border-radius: 14px; border: 2px solid rgba(11,46,111,0.1);
-      background: #fbfdff; font: inherit; outline: none;
+      background: #fbfdff; font: inherit;
     }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--navy-2); box-shadow: 0 0 0 4px rgba(20,63,138,0.08); }
-    .upload-box { border: 2px dashed rgba(11,46,111,0.18); background: linear-gradient(180deg, #f7fbff, #edf4ff); border-radius: 18px; padding: 1rem; }
-    .preview-wrap { display: grid; gap: .8rem; margin-top: .8rem; }
-    .preview-media { border-radius: 16px; overflow: hidden; border: 1px solid rgba(11,46,111,0.08); background: white; }
-    .admin-note { max-width: 760px; margin: 1rem auto 0; text-align: center; color: var(--muted); font-size: .84rem; }
+    .upload-box { border: 2px dashed rgba(11,46,111,0.18); background: #f7fbff; border-radius: 18px; padding: 1rem; }
+    .preview-wrap { margin-top: .8rem; }
     .toast {
       position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 1200; background: var(--navy);
-      color: white; padding: .95rem 1.15rem; border-radius: 14px; box-shadow: var(--shadow-med);
-      display: flex; gap: .65rem; transform: translateY(140%); transition: .28s cubic-bezier(.34,1.56,.64,1);
+      color: white; padding: .95rem 1.15rem; border-radius: 14px; display: flex; gap: .65rem;
+      transform: translateY(140%); transition: .28s cubic-bezier(.34,1.56,.64,1);
     }
     .toast.show { transform: translateY(0); }
     .modal-overlay {
       position: fixed; inset: 0; z-index: 1300; background: rgba(10,20,40,0.5);
       backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center;
-      padding: 1rem; opacity: 0; pointer-events: none; transition: .2s ease;
+      opacity: 0; pointer-events: none; transition: .2s;
     }
     .modal-overlay.active { opacity: 1; pointer-events: auto; }
-    .modal { max-width: 520px; background: white; border-radius: 24px; padding: 2rem; text-align: center; transform: scale(.94) translateY(14px); transition: .2s ease; }
-    .modal-overlay.active .modal { transform: scale(1) translateY(0); }
-    .modal-icon { width: 68px; height: 68px; border-radius: 999px; display: grid; place-items: center; margin: 0 auto 1rem; background: linear-gradient(135deg, var(--navy), var(--navy-2)); color: white; font-size: 1.7rem; }
-    .modal h3 { font-family: "Cinzel", serif; color: var(--navy); margin-bottom: .5rem; }
+    .modal { max-width: 520px; background: white; border-radius: 24px; padding: 2rem; text-align: center; }
     footer {
       background: linear-gradient(135deg, var(--navy), var(--navy-2));
       color: rgba(255,255,255,0.76); text-align: center; padding: 3rem 1.2rem;
     }
-    .footer-logo { width: 72px; height: 72px; margin: 0 auto 1rem; border-radius: 18px; background: white; display: flex; align-items: center; justify-content: center; font-size: 40px; color: var(--navy); }
+    .footer-logo { width: 72px; height: 72px; margin: 0 auto 1rem; background: white; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 40px; color: var(--navy); }
     @media (max-width: 980px) { .hero-inner { grid-template-columns: 1fr; } }
     @media (max-width: 768px) { nav { display: none; } .form-row { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
 <div class="bg-effects" id="bgEffects"></div>
-<header id="header">
-  <div class="header-inner">
-    <div class="brand">
-      <div class="brand-logo"><i class="fas fa-school"></i></div>
-      <div class="brand-text"><div class="school">The Village School</div><div class="sub">Tribute for Mr. Bill</div></div>
-    </div>
-    <nav><a href="#messages">Messages</a><a href="#milestones">Milestones</a><a href="#share">Share Yours</a></nav>
-  </div>
-</header>
+<header id="header"><div class="header-inner"><div class="brand"><div class="brand-logo"><i class="fas fa-school"></i></div><div class="brand-text"><div class="school">The Village School</div><div class="sub">Tribute for Mr. Bill</div></div></div><nav><a href="#messages">Messages</a><a href="#milestones">Milestones</a><a href="#share">Share Yours</a></nav></div></header>
 
-<section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="hero-badge"><i class="fas fa-flag-checkered"></i> Viking Pride • Corvette Spirit</div>
-      <h1>Thank You,<span class="accent">Mr. Bill</span></h1>
-      <p class="hero-subtitle">For investing in students, backing big ideas, and moving our school forward with steady class and horsepower.</p>
-      <p class="hero-copy">This tribute wall collects messages, photos & short videos from students, staff, and families — celebrating a leader who loved education and classic Corvettes.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="#share"><i class="fas fa-pen"></i> Add a Message</a><a class="btn btn-secondary" href="#messages"><i class="fas fa-comments"></i> Read Tributes</a></div>
-      <div class="hero-stats"><div class="hero-stat"><span class="number" id="yearsStat">20</span><span class="label">Years of Impact</span></div><div class="hero-stat"><span class="number" id="studentsStat">3000</span><span class="label">Students Reached</span></div><div class="hero-stat"><span class="number" id="tributesStat">0</span><span class="label">Tributes Shared</span></div></div>
-    </div>
-    <aside class="hero-card">
-      <div class="hero-card-top"><div class="hero-card-logo"><i class="fas fa-viking"></i></div><div><div class="hero-card-title">Built with School Pride</div><div class="hero-card-sub">Blue steel, gold accents, Corvette-inspired finish</div></div></div>
-      <div class="hero-card-body"><div class="hero-card-quote"><strong>GitHub Pages ready</strong>Messages & media are saved locally on this device — perfect for demo or private tribute.</div><div class="hero-card-tags"><span class="tag">Staff filter</span><span class="tag">Community filter</span><span class="tag">Photo + video</span></div></div>
-    </aside>
-  </div>
-</section>
+<section class="hero"><div class="hero-inner"><div><div class="hero-badge"><i class="fas fa-flag-checkered"></i> Purpose • Determination • Integrity • Respect</div><h1>Thank You,<span class="accent">Mr. Bill</span></h1><p class="hero-subtitle">For embodying the core values that shape our school. Each tribute honors one of four pillars.</p><p class="hero-copy">❤️ Like or dislike any tribute — one vote per person per tribute. The most loved message in each value becomes featured.</p><div class="hero-actions"><a class="btn btn-primary" href="#share"><i class="fas fa-pen"></i> Add a Tribute</a><a class="btn btn-secondary" href="#messages"><i class="fas fa-comments"></i> Read Tributes</a></div><div class="hero-stats"><div class="hero-stat"><span class="number" id="yearsStat">20</span><span class="label">Years of Impact</span></div><div class="hero-stat"><span class="number" id="studentsStat">3000</span><span class="label">Students Reached</span></div><div class="hero-stat"><span class="number" id="tributesStat">0</span><span class="label">Tributes</span></div></div></div><aside class="hero-card"><div class="hero-card-top"><div class="hero-card-logo"><i class="fas fa-viking"></i></div><div><div class="hero-card-title">Vote on Core Values</div><div class="hero-card-sub">Each tribute belongs to one of four pillars</div></div></div><div class="hero-card-body"><div class="hero-card-quote"><strong>How voting works</strong> You can give a 👍 like OR a 👎 dislike to any tribute (not both). Your vote is stored locally. Each pillar shows its own featured tribute based on net likes.</div><div class="hero-card-tags"><span class="tag">Purpose</span><span class="tag">Determination</span><span class="tag">Integrity</span><span class="tag">Respect</span></div></div></aside></div></section>
 
-<!-- Biography section (fixed) -->
-<section style="background: white;">
-  <div class="section-header"><div class="section-kicker">Biography</div><h2 class="section-title">The Story of Mr. Bill</h2></div>
-  <div class="bio-container">
-    <p>Mr. Bill Delbrugge served as principal of The Village School for over <strong>20 dedicated years</strong>, guiding students and staff with steady, thoughtful leadership.</p>
-    <p>Known for his commitment to student growth, innovation, and community building, he helped shape a culture where students felt supported and challenged.</p>
-    <p>His leadership extended beyond academics—supporting programs, mentoring staff, and building a school environment that balanced tradition with forward thinking.</p>
-  </div>
-</section>
+<section><div class="section-header"><div class="section-kicker">Biography</div><h2 class="section-title">The Story of Mr. Bill</h2></div><div class="bio-container"><p>Mr. Bill Delbrugge served as principal of The Village School for over <strong>20 dedicated years</strong>, guiding students and staff with steady, thoughtful leadership.</p><p>Known for his commitment to student growth, innovation, and community building, he helped shape a culture where students felt supported and challenged.</p><p>His leadership extended beyond academics—supporting programs, mentoring staff, and building a school environment that balanced tradition with forward thinking.</p></div></section>
 
 <section class="messages-section" id="messages">
-  <div class="section-header"><div class="section-kicker">Tribute Wall</div><h2 class="section-title">Messages from Our School Community</h2><p class="section-desc">Filter by school level or audience type to highlight tributes from students, staff, alumni, and parents.</p></div>
+  <div class="section-header"><div class="section-kicker">Tribute Wall</div><h2 class="section-title">Messages by Core Value</h2><p class="section-desc">Filter by value and audience. Every pillar has its own featured tribute (top net likes).</p></div>
   <div class="controls-wrap">
-    <div class="filter-row" id="gradeFilters"><button class="chip active" data-grade="all">All Grades</button><button class="chip" data-grade="elementary">Elementary</button><button class="chip" data-grade="middle">Middle School</button><button class="chip" data-grade="high">High School</button><button class="chip" data-grade="alumni">Alumni</button></div>
-    <div class="audience-row" id="audienceFilters"><button class="chip active" data-audience="all">All Audiences</button><button class="chip" data-audience="student">Students</button><button class="chip" data-audience="staff">Staff</button><button class="chip" data-audience="community">Community (Parents)</button></div>
+    <div class="filter-row" id="categoryFilters">
+      <button class="chip active" data-category="all">All Values</button>
+      <button class="chip" data-category="purpose">Purpose</button>
+      <button class="chip" data-category="determination">Determination</button>
+      <button class="chip" data-category="integrity">Integrity</button>
+      <button class="chip" data-category="respect">Respect</button>
+    </div>
+    <div class="audience-row" id="audienceFilters">
+      <button class="chip active" data-audience="all">All Audiences</button>
+      <button class="chip" data-audience="student">Students</button>
+      <button class="chip" data-audience="staff">Staff</button>
+      <button class="chip" data-audience="community">Community (Parents)</button>
+    </div>
   </div>
-  <div id="featured" class="featured-wrap"></div>
+  
+  <!-- Pillar Overview Section -->
+  <div id="pillarOverview" class="pillar-overview-section" style="display: none;">
+    <div class="pillar-overview-header" id="pillarOverviewTitle">Purpose</div>
+    <div class="pillar-overview-content" id="pillarOverviewContent"></div>
+  </div>
+  
+  <div class="pillar-buttons">
+    <button class="pillar-btn" data-pillar="purpose">Purpose</button>
+    <button class="pillar-btn" data-pillar="determination">Determination</button>
+    <button class="pillar-btn" data-pillar="integrity">Integrity</button>
+    <button class="pillar-btn" data-pillar="respect">Respect</button>
+  </div>
+  
+  <div id="featuredValuesGrid" class="featured-values-grid"></div>
   <div class="messages-grid" id="messagesGrid"></div>
 </section>
 
 <section class="feature-band"><div class="feature-band-inner"><p class="feature-quote">“Some people lead like a parade. Others lead like an engine: steady, powerful, dependable, always moving the whole school forward.”</p><div class="feature-credit">— A tribute to Mr. Bill</div></div></section>
 
-<section class="timeline-section" id="milestones"><div class="section-header"><div class="section-kicker">Legacy Timeline</div><h2 class="section-title">Milestones That Matter</h2><p class="section-desc">Moments that defined his leadership and impact.</p></div><div class="timeline" id="timeline"></div></section>
+<section class="timeline-section" id="milestones"><div class="section-header"><div class="section-kicker">Legacy Timeline</div><h2 class="section-title">Milestones That Matter</h2></div><div class="timeline" id="timeline"></div></section>
 
-<section class="share-section" id="share"><div class="section-header"><div class="section-kicker">Add Your Tribute</div><h2 class="section-title">Share a Message, Photo, or Short Video</h2><p class="section-desc">This GitHub Pages version saves submissions on the current device. Ready to deploy.</p></div>
-<div class="form-card"><div class="form-top"><h3>Tribute Submission Form</h3><p>Students, staff, alumni, and parents can all add to the wall.</p></div>
-<form class="form-body" id="messageForm"><div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" maxlength="50" placeholder="Enter your name" required></div><div class="form-group"><label for="audience">Audience Type</label><select id="audience" required><option value="">Select one</option><option value="student">Student</option><option value="staff">Staff</option><option value="community">Community (Parent / Family)</option></select></div></div>
-<div class="form-row"><div class="form-group"><label for="grade">Grade / Group</label><select id="grade" required><option value="">Select one</option><option value="elementary">Elementary (K–5)</option><option value="middle">Middle School (6–8)</option><option value="high">High School (9–12)</option><option value="alumni">Alumni / Staff / Community</option></select></div><div class="form-group"><label for="title">Optional Title</label><input type="text" id="title" maxlength="60" placeholder="Example: Thank you for believing in us"></div></div>
-<div class="form-group"><label for="message">Your Message</label><textarea id="message" maxlength="500" placeholder="Write your tribute to Mr. Bill..." required></textarea><div class="form-note">Keep it heartfelt and school-appropriate.</div></div>
-<div class="form-group"><label>Upload a Picture or Short Video</label><div class="upload-box"><input type="file" id="mediaUpload" accept="image/*,video/*"><div class="form-note">Images & short videos accepted (max 25MB). Stored locally on this device.</div><div class="preview-wrap" id="previewWrap"></div></div></div>
+<section class="share-section" id="share"><div class="section-header"><div class="section-kicker">Add Your Tribute</div><h2 class="section-title">Share a Message, Photo, or Short Video</h2><p class="section-desc">Choose the core value that best reflects your memory of Mr. Bill.</p></div>
+<div class="form-card"><div class="form-top"><h3>Tribute Submission Form</h3><p>Select a pillar: Purpose, Determination, Integrity, or Respect.</p></div>
+<form class="form-body" id="messageForm"><div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" maxlength="50" required></div><div class="form-group"><label for="audience">Audience Type</label><select id="audience" required><option value="">Select</option><option value="student">Student</option><option value="staff">Staff</option><option value="community">Community</option></select></div></div>
+<div class="form-row"><div class="form-group"><label for="category">Core Value</label><select id="category" required><option value="">Select a pillar</option><option value="purpose">Purpose</option><option value="determination">Determination</option><option value="integrity">Integrity</option><option value="respect">Respect</option></select></div><div class="form-group"><label for="title">Optional Title</label><input type="text" id="title" maxlength="60"></div></div>
+<div class="form-group"><label for="message">Your Message</label><textarea id="message" maxlength="500" required></textarea></div>
+<div class="form-group"><label>Upload Picture or Short Video</label><div class="upload-box"><input type="file" id="mediaUpload" accept="image/*,video/*"><div class="preview-wrap" id="previewWrap"></div></div></div>
 <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i> Add Tribute</button></form></div>
-<p class="admin-note">To share submissions globally, connect to Supabase, Airtable, or Google Forms later. This static version works instantly on GitHub Pages.</p></section>
+<p class="admin-note">Each visitor can vote once per tribute (like OR dislike). Votes are stored in this browser.</p></section>
 
-<footer><div class="footer-logo"><i class="fas fa-viking"></i></div><div class="footer-title">With gratitude, from The Village School</div><div class="footer-sub">Honoring Mr. Bill with school pride, heartfelt messages, and classic Corvette energy.</div></footer>
-<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastText">Your tribute was added.</span></div>
-<div class="modal-overlay" id="modal"><div class="modal"><div class="modal-icon"><i class="fas fa-heart"></i></div><h3>Tribute Added</h3><p>Your message has been added to this tribute wall on this device.</p><button class="modal-close" id="modalClose">Done</button></div></div>
+<footer><div class="footer-logo"><i class="fas fa-viking"></i></div><div class="footer-title">With gratitude, from The Village School</div><div class="footer-sub">Honoring Mr. Bill through Purpose, Determination, Integrity, and Respect.</div></footer>
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastText">Vote recorded.</span></div>
+<div class="modal-overlay" id="modal"><div class="modal"><div class="modal-icon"><i class="fas fa-heart"></i></div><h3>Tribute Added</h3><p>Your message is now on the wall. Others can like or dislike it.</p><button class="modal-close" id="modalClose">Done</button></div></div>
+
+<!-- YouTube Ambience -->
+<div id="youtubeAmbience" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; opacity: 0.7; transition: opacity 0.3s; cursor: pointer;">
+  <iframe id="youtubePlayer" width="0" height="0" src="https://www.youtube.com/embed/I0vhxcB03As?autoplay=1&mute=0&loop=1&playlist=I0vhxcB03As&controls=0&showinfo=0&rel=0&modestbranding=1" style="border: none; width: 0; height: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div style="background: rgba(0,0,0,0.6); border-radius: 20px; padding: 4px 10px; font-size: 11px; color: white; backdrop-filter: blur(4px);">🎵 Evening in Teyvat</div>
+</div>
 
 <script>
-  const STORAGE_KEY = "mr-bill-tribute-v3";
-  const gradeLabels = { elementary:"Elementary", middle:"Middle School", high:"High School", alumni:"Alumni / Staff / Community" };
+  const STORAGE_MSGS = "mr-bill-values-v1";
+  const STORAGE_USER_VOTES = "mr-bill-user-votes-v1";
+  const categoryNames = { purpose:"Purpose", determination:"Determination", integrity:"Integrity", respect:"Respect" };
   const audienceLabels = { student:"Student", staff:"Staff", community:"Community" };
-  let selectedGrade = "all", selectedAudience = "all", pendingMediaData = "", pendingMediaType = "";
+  let selectedCategory = "all", selectedAudience = "all", pendingMediaData = "", pendingMediaType = "";
 
   const baseMessages = [
-    { name:"Emma Thompson", audience:"student", grade:"alumni", gradeLabel:"Class of 2020", title:"You believed in us", text:"You saw potential in students before they saw it in themselves. That belief stays.", initials:"ET", mediaType:"", mediaData:"" },
-    { name:"Marcus Chen", audience:"student", grade:"high", gradeLabel:"Grade 12", title:"Steady leadership", text:"You helped make our school feel like a place where good ideas could happen.", initials:"MC", mediaType:"", mediaData:"" },
-    { name:"Ms. Rivera", audience:"staff", grade:"alumni", gradeLabel:"Faculty", title:"Thank you for backing the work", text:"You supported programs and possibilities in ways that made real work easier.", initials:"MR", mediaType:"", mediaData:"" },
-    { name:"The Johnson Family", audience:"community", grade:"alumni", gradeLabel:"Parent Community", title:"A parent thank you", text:"Thank you for building a school where families felt welcome.", initials:"JF", mediaType:"", mediaData:"" },
-    { name:"Sofia Rodriguez", audience:"student", grade:"middle", gradeLabel:"Grade 8", title:"You made things possible", text:"The opportunities you helped create made school feel bigger and more creative.", initials:"SR", mediaType:"", mediaData:"" },
-    { name:"Aiden Williams", audience:"student", grade:"elementary", gradeLabel:"Grade 3", title:"", text:"Thank you for helping our school have cool things. You made school feel special.", initials:"AW", mediaType:"", mediaData:"" }
-  ];
-  const timelineData = [
-    { year:"Year 1", text:"Began making meaningful investments that strengthened student experiences and school culture." },
-    { year:"Year 2", text:"Supported new opportunities, better resources, and ideas that gave programs more momentum." },
-    { year:"Year 3", text:"Helped move the school forward with steady leadership, quiet support, and long-term thinking." },
-    { year:"Year 4", text:"Left behind a legacy measured in confidence, trust, and possibility." }
+    { id:"base_p1", name:"Emma Thompson", audience:"student", category:"purpose", title:"You gave us a reason to strive", text:"Your leadership always reminded us why we come to school every day — to grow, to serve, to find purpose.", initials:"ET", mediaType:"", mediaData:"" },
+    { id:"base_d1", name:"Marcus Chen", audience:"student", category:"determination", title:"Never gave up on us", text:"You showed what true determination looks like, even through tough budget years. You pushed for what was right.", initials:"MC", mediaType:"", mediaData:"" },
+    { id:"base_i1", name:"Ms. Rivera", audience:"staff", category:"integrity", title:"A principal of principle", text:"Your integrity never wavered. You always chose the harder right over the easier wrong.", initials:"MR", mediaType:"", mediaData:"" },
+    { id:"base_r1", name:"The Johnson Family", audience:"community", category:"respect", title:"Respect for every voice", text:"You treated every family with respect, listened to concerns, and made our school a better place.", initials:"JF", mediaType:"", mediaData:"" },
+    { id:"base_p2", name:"Sofia Rodriguez", audience:"student", category:"purpose", title:"You helped me find my direction", text:"Your mentorship gave my school years meaning. Thank you for purpose-driven leadership.", initials:"SR", mediaType:"", mediaData:"" },
+    { id:"base_d2", name:"Aiden Williams", audience:"student", category:"determination", title:"You never quit", text:"When things got hard, you worked harder. That determination inspired all of us.", initials:"AW", mediaType:"", mediaData:"" }
   ];
 
-  function loadCustomMessages() { try { const raw = localStorage.getItem(STORAGE_KEY); return raw ? JSON.parse(raw) : []; } catch(e) { return []; } }
-  function saveCustomMessages(messages) { localStorage.setItem(STORAGE_KEY, JSON.stringify(messages)); }
-  function getAllMessages() { return [...loadCustomMessages().reverse(), ...baseMessages]; }
+  // Pillar overview content
+  const pillarContent = {
+    purpose: "Purpose is about having a clear sense of direction and meaning. Mr. Bill embodied this by always reminding us why we come to school every day—to grow, to serve, and to find our calling. He helped students discover their passions and encouraged staff to align their work with a greater mission. Under his leadership, every decision was driven by a commitment to purpose, ensuring that our school wasn't just a place of learning, but a community of individuals striving to make a difference.",
+    determination: "Determination is the relentless pursuit of goals despite obstacles. Mr. Bill never gave up on us, even during tough budget years and challenging times. He pushed for what was right, advocating for resources and opportunities that would benefit all students. His unwavering resolve taught us that perseverance is key to achieving anything worthwhile. He showed that determination isn't just about working hard, but about working smart and never losing sight of the finish line.",
+    integrity: "Integrity is doing the right thing, even when no one is watching. Mr. Bill was a principal of principle. He always chose the harder right over the easier wrong, earning the trust and respect of everyone in the community. His decisions were guided by honesty, fairness, and a strong moral compass. He believed that integrity is the foundation of leadership, and he lived by that belief every day, inspiring us to do the same.",
+    respect: "Respect is treating every individual with dignity and valuing their contributions. Mr. Bill treated every family with respect, listened to concerns, and made our school a better place for all. He fostered an environment where everyone felt heard and valued, from the youngest student to the most seasoned staff member. His respect for others was evident in every interaction, and he taught us that true leadership is about lifting others up and creating a culture of mutual appreciation."
+  };
 
-  function updateTributeCounter() { const total = getAllMessages().length; document.getElementById("tributesStat").innerText = total; }
-  function renderFeatured() { const all = getAllMessages(); if(!all.length) { document.getElementById("featured").innerHTML = '<div class="featured-wrap">✨ No tributes yet — be the first to share ✨</div>'; return; }
-    const random = all[Math.floor(Math.random() * all.length)]; const container = document.getElementById("featured");
-    container.innerHTML = `<div class="featured-wrap"><i class="fas fa-star" style="color:var(--gold); margin-bottom:10px;"></i><div style="font-weight:800; color:var(--navy);">⭐ FEATURED TRIBUTE ⭐</div><div class="message-title">${escapeHTML(random.title || "A heartfelt memory")}</div><div class="message-text">"${escapeHTML(random.text.substring(0,180))}${random.text.length>180?'…':''}"</div><div class="author-name">— ${escapeHTML(random.name)}</div><div class="author-sub">${audienceLabels[random.audience] || random.audience}</div></div>`;
+  function loadMessages() { try { const raw = localStorage.getItem(STORAGE_MSGS); return raw ? JSON.parse(raw) : []; } catch(e){ return []; } }
+  function saveMessages(msgs) { localStorage.setItem(STORAGE_MSGS, JSON.stringify(msgs)); }
+  function loadUserVotes() { try { const raw = localStorage.getItem(STORAGE_USER_VOTES); return raw ? JSON.parse(raw) : {}; } catch(e){ return {}; } }
+  function saveUserVotes(votes) { localStorage.setItem(STORAGE_USER_VOTES, JSON.stringify(votes)); }
+
+  function getAllMessages() {
+    let custom = loadMessages();
+    let all = [...baseMessages, ...custom];
+    all.forEach(msg => { if (!msg.id) msg.id = `msg_${Date.now()}_${Math.random()}`; if (!msg.initials) msg.initials = (msg.name || "?").split(" ").slice(0,2).map(w=>w[0].toUpperCase()).join(""); });
+    return all;
   }
 
-  function escapeHTML(v) { const div = document.createElement("div"); div.textContent = v || ""; return div.innerHTML; }
-  function initialsFromName(name) { return (name || "").split(" ").filter(Boolean).slice(0,2).map(w=>w[0].toUpperCase()).join("") || "??"; }
+  function getNetScoreAndCounts(msgId) {
+    const votes = loadUserVotes();
+    let likes = 0, dislikes = 0;
+    if (votes[msgId]) {
+      if (votes[msgId] === 'like') likes = 1;
+      else if (votes[msgId] === 'dislike') dislikes = 1;
+    }
+    return { likes, dislikes, net: likes - dislikes };
+  }
 
-  function mediaMarkup(msg) { if(!msg.mediaData || !msg.mediaType) return ""; if(msg.mediaType.startsWith("image/")) return `<div class="media-box"><img src="${msg.mediaData}" alt="upload" loading="lazy"></div>`; if(msg.mediaType.startsWith("video/")) return `<div class="media-box"><video controls preload="metadata" src="${msg.mediaData}"></video></div>`; return ""; }
+  function updateVote(messageId, voteType) {
+    const votes = loadUserVotes();
+    const current = votes[messageId];
+    if (current === voteType) {
+      delete votes[messageId];
+    } else {
+      votes[messageId] = voteType;
+    }
+    saveUserVotes(votes);
+    renderAll();
+  }
+
+  function renderFeaturedByCategory(allMessages) {
+    const categories = ['purpose', 'determination', 'integrity', 'respect'];
+    const featuredMap = {};
+    for (let cat of categories) {
+      let best = null, bestScore = -Infinity;
+      for (let msg of allMessages) {
+        if (msg.category === cat) {
+          const { net } = getNetScoreAndCounts(msg.id);
+          if (net > bestScore) { bestScore = net; best = msg; }
+        }
+      }
+      featuredMap[cat] = best;
+    }
+    const container = document.getElementById("featuredValuesGrid");
+    container.innerHTML = categories.map(cat => {
+      const tribute = featuredMap[cat];
+      if (!tribute) return `<div class="featured-value-card"><div class="value-name"><i class="fas fa-star"></i> ${categoryNames[cat]}</div><div class="value-quote">No tributes yet. Be the first to add one.</div></div>`;
+      const { likes, dislikes, net } = getNetScoreAndCounts(tribute.id);
+      return `<div class="featured-value-card">
+        <div class="value-name"><i class="fas fa-trophy" style="color:var(--gold);"></i> ${categoryNames[cat]}</div>
+        <div class="value-quote">“${escapeHTML(tribute.text.substring(0,120))}${tribute.text.length>120?'…':''}”</div>
+        <div class="value-meta"><strong>${escapeHTML(tribute.name)}</strong> (${audienceLabels[tribute.audience] || tribute.audience})</div>
+        <div class="value-stats"><span><i class="fas fa-thumbs-up"></i> ${likes}</span> <span><i class="fas fa-thumbs-down"></i> ${dislikes}</span> <span>🏆 Net ${net}</span></div>
+      </div>`;
+    }).join('');
+  }
 
   function renderMessages() {
-    const grid = document.getElementById("messagesGrid");
     const all = getAllMessages();
-    const filtered = all.filter(m => (selectedGrade==="all" || m.grade===selectedGrade) && (selectedAudience==="all" || m.audience===selectedAudience));
-    if(!filtered.length) { grid.innerHTML = `<div class="empty">No tributes match the current filters yet.</div>`; updateTributeCounter(); renderFeatured(); return; }
+    const filtered = all.filter(m => (selectedCategory === "all" || m.category === selectedCategory) && (selectedAudience === "all" || m.audience === selectedAudience));
+    const grid = document.getElementById("messagesGrid");
+    if (!filtered.length) { grid.innerHTML = `<div class="empty">No tributes match the current filters.</div>`; document.getElementById("tributesStat").innerText = all.length; return; }
     grid.innerHTML = "";
-    filtered.forEach((msg,idx) => {
+    filtered.forEach((msg, idx) => {
+      const { likes, dislikes } = getNetScoreAndCounts(msg.id);
+      const userVote = loadUserVotes()[msg.id];
+      const likeActive = userVote === 'like';
+      const dislikeActive = userVote === 'dislike';
       const card = document.createElement("article"); card.className = "message-card";
-      card.innerHTML = `<div class="message-meta"><span class="audience-pill"><i class="fas fa-users"></i> ${escapeHTML(audienceLabels[msg.audience] || msg.audience)}</span><span class="grade-pill">${escapeHTML(msg.gradeLabel || gradeLabels[msg.grade] || "")}</span></div><div class="quote-icon"><i class="fas fa-quote-left"></i></div>${msg.title ? `<div class="message-title">${escapeHTML(msg.title)}</div>` : ""}<div class="message-text">${escapeHTML(msg.text)}</div>${mediaMarkup(msg)}<div class="message-author"><div class="avatar">${escapeHTML(msg.initials)}</div><div><div class="author-name">${escapeHTML(msg.name)}</div><div class="author-sub">${escapeHTML(audienceLabels[msg.audience] || "")}</div></div></div>`;
+      card.innerHTML = `
+        <div class="message-meta"><span class="category-pill"><i class="fas fa-tag"></i> ${categoryNames[msg.category]}</span><span class="audience-pill audience-pill"><i class="fas fa-users"></i> ${escapeHTML(audienceLabels[msg.audience] || msg.audience)}</span></div>
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        ${msg.title ? `<div class="message-title">${escapeHTML(msg.title)}</div>` : ""}
+        <div class="message-text">${escapeHTML(msg.text)}</div>
+        ${msg.mediaData ? (msg.mediaType.startsWith("image/") ? `<div class="media-box"><img src="${msg.mediaData}" loading="lazy"></div>` : (msg.mediaType.startsWith("video/") ? `<div class="media-box"><video controls src="${msg.mediaData}"></video></div>` : "")) : ""}
+        <div class="message-footer">
+          <div class="message-author"><div class="avatar">${escapeHTML(msg.initials)}</div><div><div class="author-name">${escapeHTML(msg.name)}</div><div class="author-sub">${escapeHTML(audienceLabels[msg.audience] || "")}</div></div></div>
+          <div class="vote-buttons">
+            <button class="vote-btn like-btn ${likeActive ? 'active-like' : ''}" data-id="${msg.id}" data-type="like"><i class="fas fa-thumbs-up"></i> <span class="vote-count">${likes}</span></button>
+            <button class="vote-btn dislike-btn ${dislikeActive ? 'active-dislike' : ''}" data-id="${msg.id}" data-type="dislike"><i class="fas fa-thumbs-down"></i> <span class="vote-count">${dislikes}</span></button>
+          </div>
+        </div>
+      `;
       grid.appendChild(card);
-      requestAnimationFrame(()=>setTimeout(()=>card.classList.add("visible"), 40+idx*55));
+      requestAnimationFrame(() => setTimeout(() => card.classList.add("visible"), 40 + idx * 40));
     });
-    updateTributeCounter(); renderFeatured();
+    document.getElementById("tributesStat").innerText = all.length;
+    attachVoteEvents();
   }
 
-  function renderTimeline() { const wrap = document.getElementById("timeline"); wrap.innerHTML=""; timelineData.forEach((item,idx)=>{ const row=document.createElement("div"); row.className="timeline-item"; row.innerHTML=`<div class="timeline-card"><div class="timeline-year">${escapeHTML(item.year)}</div><div class="timeline-text">${escapeHTML(item.text)}</div></div><div class="timeline-dot"></div>`; wrap.appendChild(row); requestAnimationFrame(()=>setTimeout(()=>row.classList.add("visible"),60+idx*90)); }); }
+  function attachVoteEvents() {
+    document.querySelectorAll('.vote-btn').forEach(btn => {
+      btn.removeEventListener('click', voteHandler);
+      btn.addEventListener('click', voteHandler);
+    });
+  }
+  function voteHandler(e) {
+    e.stopPropagation();
+    const btn = e.currentTarget;
+    const id = btn.dataset.id;
+    const type = btn.dataset.type;
+    updateVote(id, type);
+    showToast(`You ${type === 'like' ? 'liked' : 'disliked'} this tribute.`);
+  }
 
-  function showToast(text) { const t=document.getElementById("toast"); document.getElementById("toastText").innerText=text; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),2500); }
+  function renderAll() {
+    const all = getAllMessages();
+    renderFeaturedByCategory(all);
+    renderMessages();
+  }
+
+  function showToast(text) { const t = document.getElementById("toast"); document.getElementById("toastText").innerText = text; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 2000); }
   function openModal() { document.getElementById("modal").classList.add("active"); }
   function closeModal() { document.getElementById("modal").classList.remove("active"); }
+  function updateActiveChips(groupId, activeValue, dataAttr) { document.querySelectorAll(`#${groupId} .chip`).forEach(btn => { btn.classList.toggle("active", btn.dataset[dataAttr] === activeValue); }); }
 
-  function updateActiveChips(groupId, activeValue, dataAttr) { document.querySelectorAll(`#${groupId} .chip`).forEach(btn=>{ btn.classList.toggle("active", btn.dataset[dataAttr]===activeValue); }); }
+  function bindFilters() {
+    document.querySelectorAll("#categoryFilters .chip").forEach(btn => btn.addEventListener("click", () => { selectedCategory = btn.dataset.category; updateActiveChips("categoryFilters", selectedCategory, "category"); renderAll(); }));
+    document.querySelectorAll("#audienceFilters .chip").forEach(btn => btn.addEventListener("click", () => { selectedAudience = btn.dataset.audience; updateActiveChips("audienceFilters", selectedAudience, "audience"); renderAll(); }));
+  }
 
-  async function handleMediaUpload(e) { const file=e.target.files?.[0]; const previewWrap=document.getElementById("previewWrap"); previewWrap.innerHTML=""; pendingMediaData=""; pendingMediaType=""; if(!file) return; if(file.size>25*1024*1024){ showToast("Please keep uploads under 25 MB."); e.target.value=""; return; } const reader=new FileReader(); reader.onload=()=>{ pendingMediaData=reader.result; pendingMediaType=file.type; const box=document.createElement("div"); box.className="preview-media"; if(file.type.startsWith("image/")) box.innerHTML=`<img src="${reader.result}" alt="preview">`; else if(file.type.startsWith("video/")) box.innerHTML=`<video controls preload="metadata" src="${reader.result}"></video>`; else box.innerHTML=`<div style="padding:1rem;">Preview not available</div>`; previewWrap.appendChild(box); }; reader.readAsDataURL(file); }
+  async function handleMediaUpload(e) {
+    const file = e.target.files?.[0]; const previewWrap = document.getElementById("previewWrap"); previewWrap.innerHTML = ""; pendingMediaData = ""; pendingMediaType = "";
+    if (!file) return; if (file.size > 25 * 1024 * 1024) { showToast("File too large (max 25MB)"); e.target.value = ""; return; }
+    const reader = new FileReader(); reader.onload = () => { pendingMediaData = reader.result; pendingMediaType = file.type; const box = document.createElement("div"); box.className = "preview-media"; if (file.type.startsWith("image/")) box.innerHTML = `<img src="${reader.result}" style="max-height:180px">`; else if (file.type.startsWith("video/")) box.innerHTML = `<video controls src="${reader.result}" style="max-height:180px"></video>`; else box.innerHTML = "Preview not available"; previewWrap.appendChild(box); }; reader.readAsDataURL(file);
+  }
 
-  function handleFormSubmit(e) { e.preventDefault(); const name=document.getElementById("name").value.trim(); const audience=document.getElementById("audience").value; const grade=document.getElementById("grade").value; const title=document.getElementById("title").value.trim(); const message=document.getElementById("message").value.trim(); if(!name||!audience||!grade||!message) return; const custom=loadCustomMessages(); custom.push({ name, audience, grade, gradeLabel:gradeLabels[grade]||grade, title, text:message, initials:initialsFromName(name), mediaType:pendingMediaType, mediaData:pendingMediaData }); saveCustomMessages(custom); e.target.reset(); document.getElementById("previewWrap").innerHTML=""; pendingMediaData=""; pendingMediaType=""; renderMessages(); showToast("Your tribute was added."); openModal(); }
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim(); const audience = document.getElementById("audience").value; const category = document.getElementById("category").value;
+    const title = document.getElementById("title").value.trim(); const message = document.getElementById("message").value.trim();
+    if (!name || !audience || !category || !message) return;
+    const custom = loadMessages();
+    const newMsg = { id: `msg_${Date.now()}_${Math.random()}`, name, audience, category, title, text: message, initials: name.split(" ").slice(0,2).map(w=>w[0].toUpperCase()).join(""), mediaType: pendingMediaType, mediaData: pendingMediaData };
+    custom.push(newMsg);
+    saveMessages(custom);
+    e.target.reset(); document.getElementById("previewWrap").innerHTML = ""; pendingMediaData = ""; pendingMediaType = "";
+    renderAll();
+    showToast("Tribute added! Now you can like or dislike it.");
+    openModal();
+  }
 
-  function bindFilters(){ document.querySelectorAll("#gradeFilters .chip").forEach(btn=>{ btn.addEventListener("click",()=>{ selectedGrade=btn.dataset.grade; updateActiveChips("gradeFilters",selectedGrade,"grade"); renderMessages(); }); }); document.querySelectorAll("#audienceFilters .chip").forEach(btn=>{ btn.addEventListener("click",()=>{ selectedAudience=btn.dataset.audience; updateActiveChips("audienceFilters",selectedAudience,"audience"); renderMessages(); }); }); }
+  function renderTimeline() { const wrap = document.getElementById("timeline"); wrap.innerHTML = ""; const timelineData = [{ year:"Year 1", text:"Began making meaningful investments that strengthened student experiences." },{ year:"Year 2", text:"Supported new opportunities and programs with determination." },{ year:"Year 3", text:"Led with integrity, earning trust across the community." },{ year:"Year 4", text:"Left a legacy of purpose, respect, and forward momentum." }]; timelineData.forEach((item, idx) => { const row = document.createElement("div"); row.className = "timeline-item"; row.innerHTML = `<div class="timeline-card"><div class="timeline-year">${escapeHTML(item.year)}</div><div class="timeline-text">${escapeHTML(item.text)}</div></div><div class="timeline-dot"></div>`; wrap.appendChild(row); requestAnimationFrame(() => setTimeout(() => row.classList.add("visible"), 60 + idx * 90)); }); }
 
-  function createBackgroundEffects(){ const bg=document.getElementById("bgEffects"); const cnt=window.innerWidth<768?16:28; for(let i=0;i<cnt;i++){ const p=document.createElement("span"); p.className="particle"; const s=Math.random()*10+5; p.style.width=`${s}px`; p.style.height=`${s}px`; p.style.left=`${Math.random()*100}%`; p.style.animationDuration=`${18+Math.random()*20}s`; p.style.animationDelay=`${Math.random()*10}s`; bg.appendChild(p); } for(let i=0;i<6;i++){ const line=document.createElement("span"); line.className="speed-line"; line.style.width=`${140+Math.random()*220}px`; line.style.top=`${5+Math.random()*90}%`; line.style.animationDuration=`${10+Math.random()*8}s`; line.style.animationDelay=`${Math.random()*12}s`; bg.appendChild(line); } }
+  function createBackgroundEffects() { const bg = document.getElementById("bgEffects"); for (let i = 0; i < 24; i++) { const p = document.createElement("span"); p.className = "particle"; const s = Math.random() * 10 + 5; p.style.width = `${s}px`; p.style.height = `${s}px`; p.style.left = `${Math.random() * 100}%`; p.style.animationDuration = `${18 + Math.random() * 20}s`; p.style.animationDelay = `${Math.random() * 10}s`; bg.appendChild(p); } for (let i = 0; i < 6; i++) { const l = document.createElement("span"); l.className = "speed-line"; l.style.width = `${140 + Math.random() * 220}px`; l.style.top = `${5 + Math.random() * 90}%`; l.style.animationDuration = `${10 + Math.random() * 8}s`; bg.appendChild(l); } }
 
-  window.addEventListener("load",()=>{ createBackgroundEffects(); bindFilters(); renderMessages(); renderTimeline(); updateTributeCounter(); document.getElementById("messageForm").addEventListener("submit",handleFormSubmit); document.getElementById("mediaUpload").addEventListener("change",handleMediaUpload); document.getElementById("modalClose").addEventListener("click",closeModal); document.getElementById("modal").addEventListener("click",(e)=>{ if(e.target.id==="modal") closeModal(); }); const header=document.getElementById("header"); window.addEventListener("scroll",()=>header.classList.toggle("scrolled",window.scrollY>8)); });
+  // Pillar Overview Functions
+  function showPillarOverview(pillar) {
+    const overviewDiv = document.getElementById("pillarOverview");
+    const titleEl = document.getElementById("pillarOverviewTitle");
+    const contentEl = document.getElementById("pillarOverviewContent");
+    titleEl.textContent = categoryNames[pillar];
+    contentEl.innerHTML = `<p>${pillarContent[pillar]}</p>`;
+    overviewDiv.style.display = "block";
+    // Scroll to overview
+    overviewDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function setupPillarButtons() {
+    const buttons = document.querySelectorAll(".pillar-btn");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const pillar = btn.dataset.pillar;
+        showPillarOverview(pillar);
+        // Update active state
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      });
+    });
+  }
+
+  window.addEventListener("load", () => { 
+    createBackgroundEffects(); 
+    bindFilters(); 
+    renderAll(); 
+    renderTimeline(); 
+    setupPillarButtons();
+    document.getElementById("messageForm").addEventListener("submit", handleFormSubmit); 
+    document.getElementById("mediaUpload").addEventListener("change", handleMediaUpload); 
+    document.getElementById("modalClose").addEventListener("click", closeModal); 
+    document.getElementById("modal").addEventListener("click", (e) => { if (e.target.id === "modal") closeModal(); }); 
+    const header = document.getElementById("header"); 
+    window.addEventListener("scroll", () => header.classList.toggle("scrolled", window.scrollY > 8)); 
+    
+    // Hide YouTube ambience on hover? No, just keep it subtle.
+    const ambienceDiv = document.getElementById("youtubeAmbience");
+    ambienceDiv.addEventListener("mouseenter", () => ambienceDiv.style.opacity = "1");
+    ambienceDiv.addEventListener("mouseleave", () => ambienceDiv.style.opacity = "0.7");
+  });
+  
+  function escapeHTML(v) { const div = document.createElement("div"); div.textContent = v || ""; return div.innerHTML; }
 </script>
 </body>
 </html>
